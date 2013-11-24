@@ -1,0 +1,4 @@
+example/index.adoc|jinja|asciidoctor:
+    #    - example/bench.py|py
+    - .py|idio|asciisyn:
+        - idio: { ext : .txt }

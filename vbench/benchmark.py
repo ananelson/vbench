@@ -21,10 +21,11 @@ import inspect
 
 
 class Benchmark(object):
-
+    ### "init"
     def __init__(self, code, setup, ncalls=None, repeat=3, cleanup=None,
                  name=None, module_name=None, description=None, start_date=None,
                  logy=False):
+        ### @end
         self.code = code
         self.setup = setup
         self.cleanup = cleanup or ''

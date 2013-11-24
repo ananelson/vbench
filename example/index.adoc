@@ -1,0 +1,32 @@
+= VBench User Guide
+:toc: right
+:toclevels: 5
+:icons: font
+:source-highlighter: pygments
+
+== Introduction
+
+VBench provides performance benchmarking for your repo history.
+
+== Usage
+
+The `api.py` module consolidates the useful endpoints.
+
+{{ d['/vbench/api.py|idio|asciisyn'] }}
+
+=== Benchmark
+
+The `Benchmark` class is used to define individual benchmarks.
+
+{{ d['/vbench/benchmark.py|idio|asciisyn']['init'] }}
+
+{{ d['example/bench.py|idio|asciisyn']['benchmark'] }}
+
+=== Benchmark Runner
+
+The `BenchmarkRunner` class is used to run a list of benchmarks.
+
+{{ d['/vbench/runner.py|idio|asciisyn']['init'] }}
+
+
+{{ d['example/bench.py|idio|asciisyn']['runner'] }}

@@ -17,6 +17,7 @@ _RUN_ORDERS = dict(
     multires=multires_order,
     )
 
+### "init"
 class BenchmarkRunner(object):
     """
 
@@ -50,6 +51,7 @@ class BenchmarkRunner(object):
                  module_dependencies=None,
                  always_clean=False,
                  use_blacklist=True):
+        ### @end
         log.info("Initializing benchmark runner for %d benchmarks" % (len(benchmarks)))
         self._benchmarks = None
         self._checksums = None
