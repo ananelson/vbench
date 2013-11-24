@@ -11,3 +11,5 @@ MANIFEST
 *flymake*
 .coverage
 vbench.egg-info
+.dexy
+output
