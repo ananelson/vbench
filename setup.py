@@ -1,6 +1,5 @@
 #/usr/bin/env python
 
-from numpy.distutils.misc_util import Configuration
 from numpy.distutils.core import setup
 
 DESCRIPTION = "Performance benchmarking and monitoring tool"
@@ -39,6 +38,11 @@ if __name__ == '__main__':
           author_email=AUTHOR_EMAIL,
           packages=['vbench', 'vbench.tests'],
           package_data={'vbench' : ['scripts/*.py']},
+          install_requires = [
+              'pytz',
+              'pandas',
+              'sqlalchemy'
+              ],
           description=DESCRIPTION,
           license=LICENSE,
           url=URL,
